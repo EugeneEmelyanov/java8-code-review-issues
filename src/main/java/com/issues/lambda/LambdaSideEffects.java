@@ -7,6 +7,11 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * It's one of the most popular misuse that I'm encountering (along with large lambdas). While writing Lambda, first of all,
+ * think about maintenance, supportability and side effects first. All other attributes (like amount of java code lines)
+ * comes after.
+ */
 public class LambdaSideEffects {
 
     /**
@@ -19,7 +24,7 @@ public class LambdaSideEffects {
 
         Arrays.asList(1, 2, 3, 4).stream()
                 .forEach(i -> {
-                    users.add(User.newBuilder().withId(i).build());
+                    users.add(User.newBuilder().withId(i).build());//accessing main method variable.
                 });
 
         return users;
