@@ -5,9 +5,9 @@ import java.util.Optional;
 public class MethodReferences {
 
     /**
-     * Instead of lambdas you can use method references. In some cases, it may increase method readability.
-     * Here, we are creating lambda from {@link MethodReferences#preprocessString(String)} method, however, there is pretty much
-     * no sense in doing that. {@link MethodReferences#processStringRecommended(String)} shows this approach.
+     * Instead of lambdas you can use method references. In some cases, it may increase code readability.
+     * We create lambda from {@link MethodReferences#preprocessString(String)} method, however, there is pretty much
+     * no sense in doing that. {@link MethodReferences#processStringRecommended(String)} shows another approach.
      */
 
     public void processStringNotRecommended(String s) {
