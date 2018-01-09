@@ -55,5 +55,4 @@ public class DateExamples {
         Date date = Calendar.getInstance().getTime();
         return date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
     }
-
 }
